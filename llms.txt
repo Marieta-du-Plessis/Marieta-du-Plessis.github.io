@@ -1,0 +1,29 @@
+# Marieta du Plessis
+
+> Professor of Leadership and Organisational Behaviour, Stellenbosch Business
+> School, and Director of the Centre for Responsible Leadership. Research
+> focus: leadership, organisational behaviour, academic careers in higher
+> education, workplace wellbeing, and workplace counselling.
+
+This file is a machine-readable index of this site, in the llms.txt format
+(https://llmstxt.org/). Update it whenever you add a page or a new
+publication group.
+
+## Pages
+
+- [Home](index.html): landing page — position, identifiers, links
+- [Publications](publications.html): selected publications grouped by theme (Leadership; Academic Careers & Higher Education; Wellbeing, Engagement & Psychological Capital; Workplace Counselling & I-O Psychology Practice), with DOI links
+- [CV](cv/cv.pdf): current CV (PDF, 2 pages)
+
+## Identifiers
+
+- Email: mdu@stellenboschbusiness.ac.za
+- ORCID: https://orcid.org/0000-0002-3865-6959
+- Google Scholar: https://scholar.google.com/citations?user=EgEWal4AAAAJ&hl=en
+- GitHub: https://github.com/Marieta-du-Plessis
+
+## Full publication record
+
+The site shows a selected/curated list. For the complete record (44 journal
+articles, 6 book chapters, 20+ conference papers), see the Google Scholar
+profile above.

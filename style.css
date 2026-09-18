@@ -1,0 +1,187 @@
+/* Minimal, portable stylesheet — one file, no build step, no dependencies. */
+
+:root {
+  --max-width: 720px;
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --bg: #ffffff;
+  --accent: #1d4b8f;
+  --border: #e2e2e2;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 1.25rem;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+header.site-nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.95rem;
+}
+
+header.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+header.site-nav a:hover,
+header.site-nav a.active {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.35rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.profile img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background: #f0f0f0;
+}
+
+.profile-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.position {
+  color: var(--muted);
+  margin: 0.15rem 0 0.9rem;
+}
+
+.identifiers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  list-style: none;
+}
+
+.identifiers a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.identifiers a:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.narrative {
+  margin-top: 1.75rem;
+  color: var(--text);
+}
+
+ul.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul.pub-list li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+ul.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-weight: 600;
+  margin: 0 0 0.2rem;
+}
+
+.pub-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 0.4rem;
+}
+
+.pub-links a {
+  margin-right: 0.9rem;
+  font-size: 0.92rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.cv-download {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.cv-download:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .profile { flex-direction: column; align-items: center; text-align: center; }
+  .identifiers { justify-content: center; }
+}
